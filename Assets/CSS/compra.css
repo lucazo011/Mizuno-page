@@ -1,0 +1,251 @@
+body {
+    background-color: #707070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.principal {
+    width: 350px;
+    height: 400px;
+    margin-bottom: 2em;
+    object-fit: cover;
+}
+
+.img-principal {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+
+}
+
+#container{
+    background-color: #fff;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 1em;
+    margin-top: 5em;
+}
+
+
+#info-imgs {
+    position: absolute;
+    border: rgb(90, 90, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    align-content: space-around;
+    align-items: center ;
+    gap: 1em;
+    padding: 5px;
+    left: 100px;
+    top: 70px;
+}
+
+.arrow {
+    transform: rotate(90deg);
+    color: rgb(124, 129, 129);
+    cursor: pointer;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.imagem-com-hover {
+    position: relative; 
+    display: inline-block; 
+    cursor: pointer;
+}
+
+.imagem-com-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s; 
+}
+
+.imagem-com-hover:hover::before {
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.3); 
+}
+
+#sale {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#sale h4 {
+    color: #707070;
+}
+
+#sale h1 {
+    font-size: 30px;
+}
+#container-size {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 2px solid rgb(124, 129, 129);
+    border-radius: 7px;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+#size-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    
+    
+}
+.size {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border: 3px solid black;
+    border-radius: 7px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover {
+        transform: 0.4s;
+        color: #001489;
+        border-color: #001489;
+    }
+    
+}
+
+
+#buy {
+    position: absolute;
+    right: 120px;
+    top: 400px;
+
+    border: none;
+    background-color: #001489;
+    padding: 1.0em;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: bold;
+
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    box-shadow: 0 0 40px 40px #707070 inset, 0 0 0 0  #707070;
+    margin-bottom: 2em;
+    margin-top: 3em;
+    
+    
+    &:hover {
+        box-shadow: 0 0 10px 0 #001489 inset, 0 0 10px 4px #001489;
+    }
+
+}
+
+#descripition {
+    width: 300px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+}
+
+#frete {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 1em;
+    position: absolute;
+    right: 80px;
+    top: 70%;
+}
+
+#relative {
+    position: relative;
+    height: 170px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultadoFrete {
+    height: 20px;
+    width: 100%;
+}
+
+#resultadoFrete {
+    position: absolute; 
+    top: 100px; 
+    left: 0; 
+}
+
+#calcularFreteButton {
+    cursor: pointer;
+    border: none;
+    background-color: #001489;
+    padding: 5px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: bold;
+
+}
+
+#resultadoPrazo {
+    width: 100%;
+    
+}
+
+#resultadoPrazo {
+    position: absolute; 
+    top: 140px; 
+    left: 0; 
+}
+
+#cepInput {
+    align-items: center;
+    padding: 5px;
+    border: none ;
+    border-bottom: 1px solid black;
+    border-radius: 5px; 
+    outline: none; 
+    font-size: 15px;
+
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.togle-size.preenchida {
+    background-color: #001489; 
+    color: #fff; 
+    border: 3px solid #001489;
+}
